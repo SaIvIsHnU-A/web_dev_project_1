@@ -1,21 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: aliceblue;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color:azure;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }  
+    
+    .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+        padding: 10px;
+    } 
+    
+    h2 {
+        text-align: center;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Style for the buttons */
+    .button_container {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .button_container button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .button_container button:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
-    <h1>Login</h1>
-        <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
+    <div class="container">
+    
+        <img src="https://i.pinimg.com/originals/1c/54/f7/1c54f7b06d7723c21afc5035bf88a5ef.png" alt="Logo" class="logo">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <input type="submit" value="Login">
-    </form>
+           <button class="login">Login</button><hr>
+        </form>
 
-    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-    <p>Forgot your password? <a href="forgot_password.html">Forgot Password</a></p>
+        <div class="button_container">
+          
+          <a href="signup.html"><button>Sign Up</button></a>
+          <a href="forgot_password.html"><button>Forgot Password</button></a>
+        </div>
+      </div> 
 </body>
 </html>
